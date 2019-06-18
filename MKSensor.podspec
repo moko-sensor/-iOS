@@ -21,22 +21,23 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Chengang/MKSensor'
+  s.homepage         = 'https://github.com/moko-sensor/-iOS'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Chengang' => 'chengang@mokotechnology.com' }
-  s.source           = { :git => 'https://github.com/Chengang/MKSensor.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/moko-sensor/-iOS.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'MKSensor/Classes/**/*'
+  s.subspec 'MKSDKForDevice' do |ss|
+    ss.source_files = 'MKSensor/Classes/MKSDKForDevice/**'
+    ss.dependency 'CocoaAsyncSocket'
+  end
   
-  # s.resource_bundles = {
-  #   'MKSensor' => ['MKSensor/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'MKSDKForMqttServer' do |ss|
+    ss.source_files = 'MKSensor/Classes/MKSDKForMqttServer/**'
+    ss.dependency 'MQTTClient','0.14.0'
+  end
+  
 end

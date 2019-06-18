@@ -1,0 +1,6 @@
+framework module Pods_MKSensor_Example {
+  umbrella header "Pods-MKSensor_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

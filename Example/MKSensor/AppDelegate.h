@@ -1,5 +1,5 @@
 //
-//  MKAppDelegate.h
+//  AppDelegate.h
 //  MKSensor
 //
 //  Created by Chengang on 06/18/2019.
@@ -8,7 +8,7 @@
 
 @import UIKit;
 
-@interface MKAppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 

@@ -1,0 +1,106 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - CircleProgressBar (0.32)
+  - CocoaAsyncSocket (7.6.3)
+  - FLAnimatedImage (1.0.12)
+  - FMDB (2.7.5):
+    - FMDB/standard (= 2.7.5)
+  - FMDB/standard (2.7.5)
+  - HJTabViewController (1.0.7)
+  - Masonry (1.1.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.2.0)
+  - MKSensor (0.1.0):
+    - MKSensor/MKSDKForDevice (= 0.1.0)
+    - MKSensor/MKSDKForMqttServer (= 0.1.0)
+  - MKSensor/MKSDKForDevice (0.1.0):
+    - CocoaAsyncSocket
+  - MKSensor/MKSDKForMqttServer (0.1.0):
+    - MQTTClient (= 0.14.0)
+  - MLInputDodger (1.5.2)
+  - MQTTClient (0.14.0):
+    - MQTTClient/Core (= 0.14.0)
+  - MQTTClient/Core (0.14.0):
+    - MQTTClient/Manager
+    - MQTTClient/Min
+  - MQTTClient/Manager (0.14.0):
+    - MQTTClient/Min
+  - MQTTClient/Min (0.14.0)
+  - Toast (4.0.0)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - AFNetworking
+  - CircleProgressBar
+  - FLAnimatedImage
+  - FMDB
+  - HJTabViewController (from `https://github.com/panghaijiao/HJTabViewController.git`)
+  - Masonry
+  - MBProgressHUD
+  - MJRefresh
+  - MKSensor (from `../`)
+  - MLInputDodger
+  - Toast
+  - YYKit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - CircleProgressBar
+    - CocoaAsyncSocket
+    - FLAnimatedImage
+    - FMDB
+    - Masonry
+    - MBProgressHUD
+    - MJRefresh
+    - MLInputDodger
+    - MQTTClient
+    - Toast
+    - YYKit
+
+EXTERNAL SOURCES:
+  HJTabViewController:
+    :git: https://github.com/panghaijiao/HJTabViewController.git
+  MKSensor:
+    :path: "../"
+
+CHECKOUT OPTIONS:
+  HJTabViewController:
+    :commit: 2366906a39eaea8fc6da0198b3a339268156a9ea
+    :git: https://github.com/panghaijiao/HJTabViewController.git
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CircleProgressBar: 3920079be5224b62b3d9ed6eeb23ac01c835b681
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  HJTabViewController: 85aaeb7aef5d96f617ff7500f5002d8e288bedf5
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
+  MKSensor: b64bbf17a386345aa3fe67103399ae9047a88ae6
+  MLInputDodger: 79a0e420a80d0d3bba122bf2639603cc76609ba8
+  MQTTClient: eea2eaaa6ddef852a1019a4dda091e22ad928b58
+  Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: 95c5952d04c7c43b3c9994aa74a0e59450468928
+
+COCOAPODS: 1.7.0.rc.1

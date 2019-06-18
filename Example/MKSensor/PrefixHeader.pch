@@ -1,15 +1,40 @@
-//
-//  PrefixHeader.pch
-//  MKSensor_Example
-//
-//  Created by aa on 2019/6/18.
-//  Copyright © 2019 Chengang. All rights reserved.
-//
 
-#ifndef PrefixHeader_pch
-#define PrefixHeader_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
-#endif /* PrefixHeader_pch */
+
+/***第三方头文件****/
+#import "Masonry.h"
+#import "MBProgressHUD.h"
+#import "FMDB.h"
+#import "UIView+Toast.h"
+#import "MKHudManager.h"
+#import "MJRefresh.h"
+#import "MLInputDodger.h"
+#import "AFNetworking.h"
+#import "YYKit.h"
+
+/***************/
+#import "MKDefines.h"
+#import "AppDelegate.h"
+#import "MKCategories.h"
+
+/******自定义工具类********/
+#import "MKNetworkManager.h"
+#import "MKAttributedStringManager.h"
+#import "MKDateFormatter.h"
+#import "MKCommonlyUIHelper.h"
+#import "MKAnimationAdopter.h"
+#import "MKDeviceModelHeader.h"
+#import "MKAddDeviceCenter.h"
+#import "MKAddDeviceKeys.h"
+
+/*********interface***********/
+#import "MKSocketManager.h"
+#import "MKMQTTServerManager.h"
+#import "MKMQTTServerDataManager.h"
+#import "MKSmartPlugConnectManager.h"
+#import "MKMqttServerIntefaces.h"
+#import "MKMQTTServerDataManager.h"
+
+
+
