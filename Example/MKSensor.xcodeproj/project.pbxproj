@@ -566,6 +566,7 @@
 		0013ECD022B88D3700009626 /* MKNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKNetworkManager.m; sourceTree = "<group>"; };
 		0013ECD122B88D3700009626 /* MKNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKNetworkManager.h; sourceTree = "<group>"; };
 		00CD247122B88E470033E932 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		00CD247222B8D72C0033E932 /* MKSensor_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MKSensor_Example.entitlements; sourceTree = "<group>"; };
 		1B7142EBC82A6234D14A614C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		25AEF45BB41395BA2075FC84 /* MKSensor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MKSensor.podspec; path = ../MKSensor.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2ED89AC7DAF0FB2FFDE7C0F3 /* Pods_MKSensor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MKSensor_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1298,8 +1299,8 @@
 		0013EC2C22B88D3700009626 /* adopter */ = {
 			isa = PBXGroup;
 			children = (
-				0013EC2D22B88D3700009626 /* MKAddDeviceDataManager.m */,
 				0013EC2E22B88D3700009626 /* MKAddDeviceDataManager.h */,
+				0013EC2D22B88D3700009626 /* MKAddDeviceDataManager.m */,
 			);
 			path = adopter;
 			sourceTree = "<group>";
@@ -1651,6 +1652,7 @@
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
+				00CD247222B8D72C0033E932 /* MKSensor_Example.entitlements */,
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for MKSensor */,
 				6003F5B5195388D20070C39A /* Tests */,
@@ -1801,6 +1803,11 @@
 				TargetAttributes = {
 					6003F589195388D20070C39A = {
 						DevelopmentTeam = R558LEUW2T;
+						SystemCapabilities = {
+							com.apple.AccessWiFi = {
+								enabled = 1;
+							};
+						};
 					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
@@ -2278,6 +2285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CODE_SIGN_ENTITLEMENTS = MKSensor_Example.entitlements;
 				DEVELOPMENT_TEAM = R558LEUW2T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MKSensor/PrefixHeader.pch";
@@ -2298,6 +2306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CODE_SIGN_ENTITLEMENTS = MKSensor_Example.entitlements;
 				DEVELOPMENT_TEAM = R558LEUW2T;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/MKSensor/PrefixHeader.pch";
