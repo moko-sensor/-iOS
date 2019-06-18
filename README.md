@@ -1,4 +1,4 @@
-# MKSensor
+# Moko Sensor
 
 [![CI Status](https://img.shields.io/travis/Chengang/MKSensor.svg?style=flat)](https://travis-ci.org/Chengang/MKSensor)
 [![Version](https://img.shields.io/cocoapods/v/MKSensor.svg?style=flat)](https://cocoapods.org/pods/MKSensor)
